@@ -1,0 +1,38 @@
+eureka:
+  container_name: eureka
+  image: springcloud/eureka
+  ports:
+    - 8761:8761
+  privileged: true
+
+mongodb:
+  image: mongo
+  ports:
+   - 27017:27017
+
+app_1:
+  container_name: app_1
+  image: java:8
+  volumes:
+    - ../:/data
+  links:
+    mongodb: mongodb
+  command: bash -c "cd /data && ./gradlew bootRun"
+
+app_2:
+  container_name: app_2
+  image: java:8
+  volumes:
+    - ../:/data
+  links:
+    mongodb: mongodb
+  command: bash -c "cd /data && ./gradlew bootRun"
+
+app_3:
+  container_name: app_3
+  image: java:8
+  volumes:
+    - ../:/data
+  links:
+    mongodb: mongodb
+  command: bash -c "cd /data && ./gradlew bootRun"

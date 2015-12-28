@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jayway.restassured:xml-path:2.7.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jayway.restassured/xml-path/2.7.0/9adecf776e7c0bc8be949fbc1d3cccac3f4e72be/xml-path-2.7.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jayway.restassured/xml-path/2.7.0/d170ae0c7b38e11af72651a6d8278ce2226a4bee/xml-path-2.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
